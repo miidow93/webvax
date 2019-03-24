@@ -1,0 +1,18 @@
+.deconnexion {
+  width: 15px;
+  float: right !important;
+  cursor: pointer;
+}
+
+.logo {
+  width: 52%;
+  min-width: 200px;
+  max-width: 330px;
+  cursor: pointer;
+}
+
+.disconnect {
+  width: 15px;
+  float: right !important;
+  cursor: pointer;
+}
