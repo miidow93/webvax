@@ -1,39 +1,189 @@
+<!--<div class="col-sm-8 pad">
+
+  <nav class="navbar navbar-default ">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Données <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li routerLinkActive="active"><a routerLink="/saisie-individu">Saisie individuelle</a></li>
+              <li routerLinkActive="active"><a routerLink="saisie">CSTES Etat civil</a></li>
+              <li routerLinkActive="active"><a routerLink="saisie">CSTE Opé vacc</a></li>
+              <li routerLinkActive="active"><a routerLink="saisie">CSTE vaccin </a></li>
+              <li routerLinkActive="active"><a routerLink="saisie">Tableau de bord</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Requetes<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li routerLinkActive="active"><a routerLink="saisie">Etat civil</a></li>
+              <li routerLinkActive="active"><a routerLink="saisie">Vaccinations</a></li>
+              <li routerLinkActive="active"><a routerLink="saisie">Alertes</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Edition <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li routerLinkActive="active"><a routerLink="saisie">Edition des Etats</a></li>
+              <li routerLinkActive="active"><a routerLink="saisie">Documents Edités</a></li>
+              <li routerLinkActive="active"><a routerLink="saisie">Listes</a></li>
+              <li routerLinkActive="active"><a routerLink="saisie">Courriers Envoyés</a></li>
+              <li routerLinkActive="active"><a routerLink="saisie">Bordereau CPAM</a></li>
+              <li routerLinkActive="active"><a routerLink="saisie">Statistiques ETCV</a></li>
+              <li routerLinkActive="active"><a routerLink="saisie">Statistiques OPVAC</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Configuration <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li routerLinkActive="active"><a routerLink="saisie">Utilisateurs</a></li>
+              <li routerLinkActive="active"><a routerLink="saisie">Droits</a></li>
+              <li routerLinkActive="active"><a routerLink="saisie">Groupes</a></li>
+              <li routerLinkActive="active"><a routerLink="saisie">Courriers</a></li>
+              <li routerLinkActive="active"><a routerLink="saisie">Etats</a></li>
+              <li routerLinkActive="active"><a routerLink="saisie">Modèles Listes</a></li>
+              <li routerLinkActive="active"><a routerLink="saisie">Synchro CS</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Divers <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li routerLinkActive="active"><a routerLink="saisie">Infos Centre</a></li>
+              <li routerLinkActive="active"><a routerLink="saisie">Changement MDP</a></li>
+              <li routerLinkActive="active"><a routerLink="saisie">Options</a></li>
+              <li routerLinkActive="active"><a routerLink="saisie">Synchro</a></li>
+              <li routerLinkActive="active"><a routerLink="saisie">Apropos de ..</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+</div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">WEBVAX</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link">Données <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link">Requetes</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link">Edition</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link">Configuration</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link">Divers</a>
-      </li>
+
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Dropdown link
+        <a class="nav-link dropdown-toggle" href="#" id="menuDonnees" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Données
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-menu" aria-labelledby="menuDonnees">
+          <a class="dropdown-item" routerLink="/saisie-individu">Saisie individuelle</a>
+          <a class="dropdown-item" routerLink="saisie">CSTES Etat civil</a>
+          <a class="dropdown-item" routerLink="saisie">CSTE Opé vacc</a>
+          <a class="dropdown-item" routerLink="saisie">CSTE vaccin </a>
+          <a class="dropdown-item" routerLink="saisie">Tableau de bord</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="menuRequetes" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Requêtes
+        </a>
+        <div class="dropdown-menu" aria-labelledby="menuRequetes">
+          <a routerLink="saisie" class="dropdown-item">Etat civil</a>
+          <a routerLink="saisie" class="dropdown-item">Vaccinations</a>
+          <a routerLink="saisie" class="dropdown-item">Alertes</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="menuEdition" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Edition
+        </a>
+        <div class="dropdown-menu" aria-labelledby="menuEdition">
+          <a routerLink="saisie" class="dropdown-item">Edition des Etats</a>
+          <a routerLink="saisie" class="dropdown-item">Documents Edités</a>
+          <a routerLink="saisie" class="dropdown-item">Listes</a>
+          <a routerLink="saisie" class="dropdown-item">Courriers Envoyés</a>
+          <a routerLink="saisie" class="dropdown-item">Bordereau CPAM</a>
+          <a routerLink="saisie" class="dropdown-item">Statistiques ETCV</a>
+          <a routerLink="saisie" class="dropdown-item">Statistiques OPVAC</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="menuConfiguration" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Configuration
+        </a>
+        <div class="dropdown-menu" aria-labelledby="menuConfiguration">
+          <a routerLink="saisie" class="dropdown-item">Utilisateurs</a>
+          <a routerLink="saisie" class="dropdown-item">Droits</a>
+          <a routerLink="saisie" class="dropdown-item">Groupes</a>
+          <a routerLink="saisie" class="dropdown-item">Courriers</a>
+          <a routerLink="saisie" class="dropdown-item">Etats</a>
+          <a routerLink="saisie" class="dropdown-item">Modèles Listes</a>
+          <a routerLink="saisie" class="dropdown-item">Synchro CS</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="menuDivers" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Divers
+        </a>
+        <div class="dropdown-menu" aria-labelledby="menuDivers">
+          <a routerLink="saisie" class="dropdown-item">Infos Centre</a>
+          <a routerLink="saisie" class="dropdown-item">Changements MDP</a>
+          <a routerLink="saisie" class="dropdown-item">Options</a>
+          <a routerLink="saisie" class="dropdown-item">Courriers</a>
+          <a routerLink="saisie" class="dropdown-item">Synchro</a>
+          <a routerLink="saisie" class="dropdown-item">A Propos de ..</a>
         </div>
       </li>
     </ul>
   </div>
 </nav>
-
-<h2 style="color: cornflowerblue">Administration</h2>

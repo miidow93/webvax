@@ -1,32 +1,56 @@
-<table class="table table-borderless">
-  <tbody>
-    <tr class="backblanche">
-      <td class="{{ customClass }}">
-        <img class="imagebarre" src="{{ customImg }}">
-      </td>
-      <td>
-        <div class="pad">
-          <div id="#{{ customId }}">{{ title }}</div>
-          <table class="table table-striped">
-            <tr>
-              <th>Header</th>
-              <th>Header</th>
-              <th>Header</th>
-            </tr>
-            <tr>
-              <td scope="row">Test</td>
-              <td>Test</td>
-              <td>Test</td>
-            </tr>
-            <tr>
-              <td scope="row">Test</td>
-              <td>Test</td>
-              <td>Test</td>
-            </tr>
-          </table>
-        </div>
-      </td>
+<ng-template [ngIf]="!designed" [ngIfElse]="notDesigned">
+  <table class="table table-borderless">
+    <tbody>
+      <tr class="backblanche">
+        <td class="{{ customClass }}">
+          <img class="imagebarre" src="{{ customImg }}">
+        </td>
+        <td>
+          <div class="pad">
+            <div id="#{{ customId }}">{{ title }}</div>
+            <table class="table table-borderless">
+              <tr>
+                <th>Header</th>
+                <th>Header</th>
+                <th>Header</th>
+              </tr>
+              <tr>
+                <td scope="row">Test</td>
+                <td>Test</td>
+                <td>Test</td>
+              </tr>
+              <tr>
+                <td scope="row">Test</td>
+                <td>Test</td>
+                <td>Test</td>
+              </tr>
+            </table>
+          </div>
+        </td>
 
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
+</ng-template>
+
+<ng-template #notDesigned>
+  <table class="table table-borderless">
+    <tbody>
+      <tr class="backblanche">
+        <td class="{{ customClass }}">
+          <img class="imagebarre" src="{{ customImg }}">
+        </td>
+        <td>
+          <div class="pad">
+            <div id="#{{ customId }}">
+              {{ title }}
+              <a href="#">
+                <img class="arrow-link" src="assets/images/arrow-link.svg" />
+              </a>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</ng-template>

@@ -10,7 +10,8 @@ export class DossierComponent implements OnInit {
   @Input() customClass: string;
   @Input() customId: string;
   @Input() customImg: string;
-  
+  @Input() designed: boolean;
+
   constructor() { }
 
   ngOnInit() {
